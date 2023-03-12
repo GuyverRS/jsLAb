@@ -8,7 +8,7 @@ let resultClick = document.getElementById(`result-click`);
 spy.style.top = '0px';
 spy.style.left = '0px';
 
-//1-2
+//1
 document.onmousemove= function (evt) 
 {
     resultClick.innerHTML = 'Координаты мыши: ' + 'clientX-' + evt.clientX + 'clientY-' + evt.clientY + 'x-' + evt.x + 'y-' + evt.y;//1

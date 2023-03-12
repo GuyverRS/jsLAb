@@ -36,7 +36,7 @@ color = 'red';
 let draw = false;
 document.onclick = function () {
   draw = !draw;
-  console.log(draw);
+  //console.log(draw);
 }
 
 
