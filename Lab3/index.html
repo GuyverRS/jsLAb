@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Сinema</title>
+  <meta charset="UTF-8" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/index.css">
+  <script src="js/index.js" defer></script>
+</head>
+
+<body>
+
+  <!-- -->
+  <div class="row mt-3">
+    <div id="date" class="col-3 displayBlock">
+      <select name="date">
+        <option value="">Choose a date</option>
+        <option value="1">27 martha</option3>
+        <option value="2">28 martha</option>
+        <option value="3">1 april</option>
+      </select>
+    </div>
+    <div id="film" class="col-3 displayNone">
+      <select name="film">
+        <option value="">Выбирете фильм</option>
+        <option value="1">Film 1</option>
+        <option value="2">Film 2</option>
+        <option value="3">Film 3</option>
+      </select>
+    </div>
+    <div id="time"  class="col-3 displayNone">
+      <select name="time">
+        <option value="">Choose the time</option>
+        <option value="1">10:30</option>
+        <option value="2">15:10</option>
+        <option value="3">19:30</option>
+      </select>
+    </div>
+  </div>
+
+
+
+  <!-- зал-->
+  <div id="room" class="container w-50 mx-auto displayNone">
+    <!-- экран -->
+    <div class="row bg-info">
+      <div class="col">
+        screan
+      </div>
+    </div>
+
+    <!-- интревал между рядами -->
+    <div class="row">
+      &nbsp
+    </div>
+
+    <!-- 1 ряд  -->
+    <div class="row">
+      <div class="col-md-1 mx-auto">
+        <button id="place1_1" name="place" type="button" class="btn bg-primary">
+          1_1
+        </button>
+      </div>
+      <div class="col-md-1 mx-auto">
+        <button id="place1_2" name="place" type="button" class="btn bg-primary">
+          1_2
+        </button>
+      </div>
+      <div class="col-md-1 mx-auto">
+        <button id="place1_3" name="place" type="button" class="btn bg-primary">
+          1_3
+        </button>
+      </div>
+      <div class="col-md-1 mx-auto">
+        <button id="place1_4" name="place" type="button" class="btn bg-primary">
+          1_4
+        </button>
+      </div>
+    </div>
+
+    <!-- интревал между рядами -->
+    <div class="row">
+      &nbsp
+    </div>
+
+    <!-- 2 ряд  -->
+    <div class="row">
+      <div class="col-md-1 mx-auto">
+        <button id="place2_1" name="place" type="button" class="btn bg-primary">
+          2_1
+        </button>
+      </div>
+      <div class="col-md-1 mx-auto">
+        <button id="place2_2" name="place" type="button" class="btn bg-primary">
+          2_2
+        </button>
+      </div>
+      <div class="col-md-1 mx-auto">
+        <button id="place2_3" name="place" type="button" class="btn bg-primary">
+          2_3
+        </button>
+      </div>
+      <div class="col-md-1 mx-auto">
+        <button id="place2_4" name="place" type="button" class="btn bg-primary">
+          2_4
+        </button>
+      </div>
+    </div>
+
+    <!-- интревал между рядами -->
+    <div class="row">
+      &nbsp
+    </div>
+
+    <!-- 3 ряд  -->
+    <div class="row">
+      <div class="col-md-1 mx-auto">
+        <button id="place3_1" name="place" type="button" class="btn bg-primary">
+          3_1
+        </button>
+      </div>
+      <div class="col-md-1 mx-auto">
+        <button id="place3_2" name="place" type="button" class="btn bg-primary">
+          3_2
+        </button>
+      </div>
+      <div class="col-md-1 mx-auto">
+        <button id="place3_3" name="place" type="button" class="btn bg-primary">
+          3_3
+        </button>
+      </div>
+      <div class="col-md-1 mx-auto">
+        <button id="place3_4" name="place" type="button" class="btn bg-primary">
+          3_4
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="formBooking" class="form mt-5">
+    <div class="row mt-2">
+      <label class="col-3">Phone number</label>
+      <input class="col" type="tel" placeholder="+79999999999" id="numberPhone">
+      <span id="number_span"></span>
+    </div>
+    <div class="row mt-2">
+      <label class="col-3">Email</label>
+      <input class="col" type="email" placeholder="info@kino.com" id="email">
+      <span id="email_span"></span>
+    </div>
+    <div class="row mt-2">
+      <label class="col-3"> Amount to be paid </label>
+      <span class="col" id="totalCostFinal"></span>
+    </div>
+    <button class="btn btn-primary mt-3" id="booking">To book</button>
+    <!-- <button class="btn btn-primary mt-3" id="continuePurchase">Купить сейчас</button>-->
+  </div>
+
+
+  <div id="formPayment" class="form mt-5">
+    <div class="row mt-2">
+      <label class="col-3"> Card number</label>
+      <input input id="inputNumberCard" class="col" type="text" minlength="16" maxlength="16">
+    </div>
+    <div class="row mt-2">
+      <label class="col-3">Username</label>
+      <input input id="inputName" class="col" type="text" minlength="5" maxlength="50">
+    </div>
+    <div class="row mt-2">
+      <label class="col-3">CVC2</label>
+      <input id="inputCVC2" class="col" type="text" maxlength="3">
+    </div>
+    <button class="btn btn-primary mt-3" id="buy">Buy</button>
+  </div>
+
+
+
+
+</body>
+
+</html>
