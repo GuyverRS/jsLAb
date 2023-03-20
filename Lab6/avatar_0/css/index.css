@@ -1,0 +1,90 @@
+/* Размеры */
+
+.constructor {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.username-container {
+    padding: 10px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 30px;
+    text-align: center;
+    min-height: 60px;
+    word-break: break-all;
+}
+
+.left {
+    width: 400px;
+}
+
+
+
+.right {
+    width: 300px;
+}
+.avatar {
+    position: relative;
+}
+
+
+.frame {
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    border: 8px solid black;
+}
+
+img, svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+.label-row {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.label-row label,
+.label-row .form-check {
+    width: 150px;
+}
+.label-row input,
+.label-row select {
+    flex: 1;
+}
+
+
+/* Класс для скрытия аксессуаров */
+.hidden {
+    display: none;
+}
+
+
+/* Цвета */
+.frame {
+    background-color: #7aa2ff;
+}
+.tshirt-color {
+    fill: #ffffff;
+}
+
+/* Форма рамки */
+.frame-1 {
+    border-style: solid;
+}
+.frame-2 {
+    border-style: dashed;
+}
+.frame-3 {
+    border-style: double;
+}
+.frame-4 {
+    border-style: none;
+}
