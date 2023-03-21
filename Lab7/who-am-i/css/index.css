@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding-top: 100px;
+  justify-content: flex-start;
+  align-items: stretch;
+  width: 400px;
+  gap: 20px;
+}
+
+.image {
+  width: 100%;
+}
